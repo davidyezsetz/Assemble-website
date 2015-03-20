@@ -1,0 +1,36 @@
+.project {
+    position: relative;
+    margin-bottom: $base-spacing-unit;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    &:hover {
+        .project__overlay {
+            opacity: 1;
+        }
+    }
+}
+
+.project__thumb {
+
+}
+
+.project__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba( 14, 70, 95, 0.5 );
+
+    opacity: 0;
+    transition: opacity .5s;
+
+    p {
+        color: #e4e4e4;
+        padding-top: $base-spacing-unit * 2;
+        transform: skewY( 5deg );
+    }
+}

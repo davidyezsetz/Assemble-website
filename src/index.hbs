@@ -1,0 +1,135 @@
+---
+title: Lorem Ipsum
+layout: default.hbs
+---
+<section class="jobs" id="jobs">
+  <button class="jobs__hide" id="jobs__hide">Close</button>
+  <div class="wrapper">
+    <div class="jobs__wrapper" id="jobs__wrapper">
+      <nav class="jobs__menu" role="navigation">
+        {{#each jobs}}
+        <button class="jobs__menu__item" id="jobs__menu__trigger-{{id}}">{{headline}}</button>
+        {{/each}}
+        <div class="jobs__menu__highlight" id="jobs__highlight"></div>
+      </nav>
+      <div class="job__wrapper cf" id="job_wrapper">
+        {{#each jobs}}
+          {{> job}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+<header class="header" role="banner">
+  <div class="wrapper cf">
+    <div class="header__logo">
+      <img srcset="images/logo.png 1x, images/logo@2x.png 2x" alt="Lorem Ipsum Logo">
+    </div>
+    <div class="header__share heart">
+      <div class="heart__upper-left"><a href="#" title="Lorem Ipsum Facebook Page" target="_blank"><img class="heart__facebook" srcset="images/social_facebook.png 1x, images/social_facebook@2x.png 2x" alt="facebook" width="6" height="12"></a></div>
+      <div class="heart__upper-right"><a href="#" title="Lorem Ipsum Google Plus Page" target="_blank"><img class="heart__google" srcset="images/social_google.png 1x, images/social_google@2x.png 2x" alt="google" width="12" height="11"></a></div>
+      <div class="heart__bottom"><a href="#" title="Lorem Ipsum Twitter Page" target="_blank"><img class="heart__twitter" srcset="images/social_twitter.png 1x, images/social_twitter@2x.png 2x" alt="twitter" width="7" height="10"></a></div>
+    </div>
+    <nav class="header__menu" role="navigation">
+      {{#with menus.header-menu}}
+        {{> menu}}
+      {{/with}}
+    </nav>
+  </div>
+</header>
+<main id="main" role="main">
+  <section class="brand tilted" role="region" aria-labelledby="brand__headline">
+    <div class="overflow--hidden">
+      <div class="wrapper">
+        <h1 class="brand__headline" id="brand__headline">
+          {{#each teaser.headline}}
+            {{this}}<br>
+          {{/each}}
+        </h1>
+        <img class="brand__teaser" srcset="images/teaser_small.png 415w, images/teaser_medium.png 623w, images/teaser_large.png 830w" sizes="(min-width: 870px) 830px" alt="{{teaser.subline}}">
+        <h2 class="brand__subline">{{teaser.subline}}<a class="float--right" href="{{teaser.link}}" target="_blank">More</a></h2>
+      </div>
+    </div>
+  </section>
+  <section class="about" role="region" aria-label="About Lorem Ipsum">
+   <div class="wrapper">
+    <div class="grid">
+      <div class="grid__item one-half palm--one-whole">
+        {{#with brand_presentation.about}}
+          <h1>{{headline}}</h1>
+          {{#each content}}<p>{{{this}}}</p>{{/each}}
+        {{/with}}
+      </div>
+      <div class="about__units grid__item one-half palm--one-whole">
+        {{#each brand_presentation.units}}
+         <h2>{{headline}}</h2>
+         <p>{{text}}</p>
+         <br>
+        {{/each}}
+      </div>
+    </div>
+   </div>
+  </section>
+  <section class="customers" role="region" aria-labelledby="customers-headline">
+    <div class="wrapper">
+      <h1 class="h2" id="customers-headline">Lorem customers</h1>
+      <ul class="grid grid--spaced grid--middle text--center">
+        {{#each customers}}
+          {{> award}}
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+  <section class="tweets tilted" role="region" aria-label="Neueste Tweets">
+    <div class="wrapper">
+      <div class="tweets__wrapper" id="tweets"></div>
+    </div>
+  </section>
+  <section id="portfolio" class="portfolio" role="region" aria-label="Portfolio">
+    <div id="portfolio__stage" class="portfolio__stage"><div class="wrapper"></div></div>
+    <div class="wrapper">
+      <div class="grid grid--full portfolio__row portfolio__row--upper" id="portfolio__row--upper">
+        {{#each portfolio.top-row}}
+          {{> portfolio}}
+        {{/each}}
+      </div>
+      <div class="grid grid--full portfolio__row portfolio__row--lower" id="portfolio__row--lower">
+        {{#each portfolio.bottom-row}}
+          {{> portfolio}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+  <section class="awards" role="region" aria-labelledby="awards-headline">
+    <div class="wrapper">
+      <h1 class="h2" id="awards-headline">Awards ipsum</h1>
+      <ul class="grid grid--spaced grid--middle text--center">
+        {{#each awards}}
+          {{> award}}
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="footer tilted" role="contentinfo">
+  <div class="wrapper">
+    <div class="grid">
+      {{#each addresses}}
+        <div class="grid__item palm--one-whole one-third">{{> address}}</div>
+      {{/each}}
+    </div>
+    <hr>
+    <div class="grid">
+      <nav class="grid__item one-whole desk--five-eighths" role="navigation">
+        {{#with menus.footer-menu}}
+          {{> menu}}
+        {{/with}}
+      </nav>
+      <div class="grid__item one-whole desk--three-eighths cf">
+        {{#with menus.social-menu}}
+          {{> menu}}
+        {{/with}}
+      </div>
+    </div>
+  </div>
+</footer>

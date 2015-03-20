@@ -1,0 +1,10 @@
+/nbproject/
+/.sass-cache/
+/.tmp/
+*.sublime*
+/app/*.html
+1st-shot/
+share/
+**/bower_components/*
+/node_modules/
+/dist/

@@ -1,0 +1,19 @@
+.footer {
+  &:after {
+    top: -90px;
+    height: 820px;
+  }
+
+  @media all and (min-width: 601px) {
+    &:after {
+      height: 500px;
+    }
+  }
+
+  @media all and (min-width: 870px) {
+    &:after {
+      height: 430px;
+    }
+  }
+}
+

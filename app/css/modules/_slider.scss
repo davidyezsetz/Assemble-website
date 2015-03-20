@@ -1,0 +1,86 @@
+.slick-prev, .slick-next {
+  top: 25%;
+  width: 20px;
+  height: 40px;
+
+  &:before {
+    content:  "";
+  }
+}
+
+$offset: -20px;
+
+.slick-prev {
+  left: $offset;
+
+  background: url('../images/arrow_left.png');
+}
+
+.slick-prev:hover {
+  background: url('../images/arrow_left.png');
+}
+
+.slick-next {
+  right: $offset;
+
+  background: url('../images/arrow_right.png');
+}
+
+.slick-next:hover {
+  background: url('../images/arrow_right.png');
+}
+
+@media all and (min-width: 1080px) {
+  $offset: -50px;
+
+  .slick-prev {
+    left: $offset;
+  }
+
+  .slick-next {
+    right: $offset;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  $offset: -100px;
+
+  .slick-prev {
+    left: $offset;
+  }
+
+  .slick-next {
+    right: $offset;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  $offset: -150px;
+
+  .slick-prev {
+    left: $offset;
+  }
+
+  .slick-next {
+    right: $offset;
+  }
+}
+
+.touch .slick-prev, .touch .slick-next {
+  display: none !important;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dppx){
+
+  .slick-prev, .slick-prev:hover {
+    background: url('../images/arrow_left@2x.png');
+    background-size: 20px 40px;
+  }
+
+  .slick-next, .slick-next:hover {
+    background: url('../images/arrow_right@2x.png');
+    background-size: 20px 40px;
+  }
+}

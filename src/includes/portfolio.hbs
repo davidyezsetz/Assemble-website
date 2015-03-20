@@ -1,0 +1,21 @@
+<div class="portfolio__entry grid__item one-quarter">
+  <img srcset="images/projects/{{folder}}/small/{{thumb}} 120w, images/projects/{{folder}}/medium/{{thumb}} 180w, images/projects/{{folder}}/large/{{thumb}} 240w," alt="{{thumb-title}}" class="portfolio__entry__thumb">
+  <img src="images/empty.png" data-src="images/projects/{{hover}}" alt="{{thumb-title}}" class="portfolio__entry__hover">
+  <article class="portfolio__entry__detail grid">
+    <div class="portfolio__entry__close"></div>
+    <div class="grid__item desk--one-third">
+      <h1 class="portfolio__entry__headline">{{headline}}</h1>
+      <p>{{text}}</p>
+      {{#if blog-link}}
+        <a href="{{blog-link}}" target="_blank">Mehr im Blog</a>
+      {{/if}}
+    </div>
+    <div class="grid__item desk--two-thirds">
+      <div class="portfolio__entry__slider">
+        {{#each slider}}
+        <div class="portfolio__entry__slider__slide"><img class="portfolio__entry__slider__image" src="images/empty.png" data-src="images/projects/{{../folder}}/small/{{this}} 310w, images/projects/{{../folder}}/medium/{{this}} 465w, images/projects/{{../folder}}/large/{{this}} 620w" alt="{{thumb-title}}"></div>
+        {{/each}}
+      </div>
+    </div>
+  </article>
+</div>

@@ -1,0 +1,50 @@
+.address {
+    margin-bottom: $base-spacing-unit;
+
+    font-style: normal;
+
+    p {
+      margin-bottom: $half-spacing-unit;
+
+      line-height: 1.5;
+    }
+}
+
+@media all and (max-width:839px) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid__item:nth-child(1) {
+    order: 1;
+  }
+
+  .grid__item:nth-child(2) {
+    order: 5;
+  }
+
+  .grid__item:nth-child(3) {
+    order: 2;
+  }
+
+  .grid__item:nth-child(4) {
+    order: 6;
+  }
+
+  .grid__item:nth-child(5) {
+    order: 3;
+  }
+
+  .grid__item:nth-child(6) {
+    order: 7;
+  }
+
+  .grid__item:nth-child(7) {
+    order: 4;
+  }
+
+  .grid__item:nth-child(8) {
+    order: 8;
+  }
+}

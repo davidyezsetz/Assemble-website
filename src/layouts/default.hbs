@@ -1,0 +1,90 @@
+<!doctype html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta property="description" content="{{meta.description}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{meta.title}}</title>
+        <!-- FACEBOOK -->
+        <meta property="og:site_name" content="{{meta.title}}">
+        <meta property="og:url" content="http://www.interactive-pioneers.de">
+        <meta property="og:description" content="{{meta.description}}">
+        <meta property="og:image" content="images/logo.png">
+        <meta property="og:locale" content="de_DE">
+        <meta property="og:author" content="https://www.facebook.com/Interactive.Pioneers">
+        <!-- FACEBOOK END -->
+        <!-- TWITTER -->
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:title" content="{{meta.title}}">
+        <meta property="twitter:description" content="{{meta.description}}">
+        <meta property="twitter:image" content="images/logo.png">
+        <!-- TWITTER END -->
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+        <script async>
+          (function(){
+            function addFont() {
+              var style = document.createElement('style');
+              style.rel = 'stylesheet';
+              document.head.appendChild(style);
+              style.textContent = localStorage.avalon;
+            }
+
+            try {
+              if (localStorage.avalon) {
+              // The font is in localStorage, we can load it directly
+                addFont();
+              } else {
+              // We have to first load the font filehronously
+                var request = new XMLHttpRequest();
+                request.open('GET', 'fonts/avalon.css', true);
+                request.onload = function() {
+                  if (request.status >= 200 && request.status < 400) {
+                              // We save the file in localStorage
+                    localStorage.avalon = request.responseText;
+                          // ... and load the font
+                    addFont();
+                  }
+                }
+                  request.send();
+              }
+            } catch(ex) {
+                // maybe load the font synchronously for woff-capable browsers
+                // to avoid blinking on every request when localStorage is not available
+            }
+          }());
+        </script>
+        <!-- build:css(.tmp) css/main.css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
+        <link rel="canonical" href="http://www.interactive-pioneers.de">
+    </head>
+    <body class="no-transitions">
+        {{> body }}
+        <!-- build:js js/main.js -->
+        <!-- bower:js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/slick-carousel/slick/slick.js"></script>
+        <script src="bower_components/picturefill/dist/picturefill.js"></script>
+        <!-- endbower -->
+        <script src="js/jobs.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/twitterFeed.js"></script>
+        <!--script src="js/shenanigans.js"></script-->
+        <!-- endbuild -->
+      <script type="text/javascript" defer>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29060181-1']);
+        _gaq.push(['_setDomainName', 'interactive-pioneers.de']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    </body>
+</html>

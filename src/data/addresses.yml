@@ -1,0 +1,17 @@
+- headline: Kontakt
+  info:
+    - <strong>Mail</strong> <a class="email-link hidden-link" href="javascript:openEmail('hello');">ed.tset@tcatnoc</a>
+    - <strong>Telefon</strong> +49 241 12345 678
+    - <strong>Fax</strong> +49 241 12345 789
+
+- headline: Lorem
+  info:
+    - <a href="https://www.google.de/maps/place/Talisker+Distillery/@57.3027359,-6.3534552,17z/" class="hidden-link" target="_blank">Lorem Ipsum</a>
+    - <a href="https://www.google.de/maps/place/Talisker+Distillery/@57.3027359,-6.3534552,17z/" class="hidden-link" target="_blank">Lorem Ipsum</a>
+    - <a href="https://www.google.de/maps/place/Talisker+Distillery/@57.3027359,-6.3534552,17z/" class="hidden-link" target="_blank">Lorem Ipsum</a>
+
+- headline: Ipsum
+  info:
+    - <a href="https://www.google.de/maps/place/Talisker+Distillery/@57.3027359,-6.3534552,17z/" class="hidden-link" target="_blank">Lorem Ipsum</a>
+    - <a href="https://www.google.de/maps/place/Talisker+Distillery/@57.3027359,-6.3534552,17z/" class="hidden-link" target="_blank">Lorem Ipsum</a>
+    - <a href="https://www.google.de/maps/place/Talisker+Distillery/@57.3027359,-6.3534552,17z/" class="hidden-link" target="_blank">Lorem Ipsum</a>

@@ -1,0 +1,5 @@
+<ul class="{{class}}{{#if modifier-class}} {{modifier-class}}{{/if}}">
+{{#each entries}}
+<li class="{{../class}}__li"><a class="{{../class}}__link {{#if link-identifier-class}} {{link-identifier-class}}{{/if}}" {{#if link-id}}id="{{link-id}}"{{/if}} href="{{link-target}}" {{#if new-tab}}target="blank"{{/if}}>{{link-name}}</a></li>
+{{/each}}
+</ul>

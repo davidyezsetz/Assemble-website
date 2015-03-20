@@ -1,0 +1,65 @@
+header-menu:
+  class: site-nav
+  entries:
+    - link-name: Projekte
+      link-target: "#portfolio"
+      link-identifier-class: "hash-link"
+    - link-name: Blog
+      link-target: "#"
+      new-tab: 1
+    - link-name: Jobs
+      link-target: "#"
+      link-id: jobs__show
+
+footer-menu:
+  class: site-nav
+  modifier-class: site-nav--narrow site-nav--legal
+  entries:
+    - link-name: Impressum
+      link-target: "#"
+      new-tab: 1
+    - link-name: AGB
+      link-target: "#"
+      new-tab: 1
+    - link-name: Blog
+      link-target: "#"
+      new-tab: 1
+    - link-name: Jobs
+      link-target: "#"
+      link-id: jobs__show--footer
+    - link-name: Press
+      link-target: "#"
+      new-tab: 1
+
+social-menu:
+  class: site-nav
+  modifier-class: site-nav--narrow site-nav--icons
+  entries:
+    - link-name: Facebook
+      link-target: #
+      link-identifier-class: social-icon social-icon--facebook
+      new-tab: 1
+    - link-name: Twitter
+      link-target: #
+      link-identifier-class: social-icon social-icon--twitter
+      new-tab: 1
+    - link-name: Google Plus
+      link-target: #
+      link-identifier-class: social-icon social-icon--google
+      new-tab: 1
+    - link-name: Vimeo
+      link-target: #
+      link-identifier-class: social-icon social-icon--vimeo
+      new-tab: 1
+    - link-name: Xing
+      link-target: #
+      link-identifier-class: social-icon social-icon--xing
+      new-tab: 1
+    - link-name: Linked In
+      link-target: #
+      link-identifier-class: social-icon social-icon--linked
+      new-tab: 1
+    - link-name: YouTube
+      link-target: #
+      link-identifier-class: social-icon social-icon--youtube
+      new-tab: 1

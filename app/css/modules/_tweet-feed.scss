@@ -1,0 +1,55 @@
+$height: 295px;
+
+.tweets {
+  position: relative;
+  margin-bottom: 85px;
+  min-height: 190px;
+
+  &:after {
+    height: $height;
+  }
+}
+
+.tweets__tweet, .tweets__tweet a {
+  letter-spacing: 0;
+  @include font-size( 35px, false );
+  line-height: 40px;
+  @extend %font-bold;
+}
+
+.tweets__user {
+  display: inline-block;
+  margin-right: $base-spacing-unit;
+
+  img {
+    display: none;
+  }
+}
+
+.tweets__timePosted {
+  display: inline-block;
+}
+
+.tweets__interact {
+  display: inline-block;
+  float: right;
+
+  a {
+    display: inline-block;
+    margin-left: $base-spacing-unit;
+  }  
+}
+
+@media only all and ( max-width: 666px ) {
+  .tweets__tweet, .tweets__tweet a {
+    @include font-size( 25px, false );
+    line-height: 30px;
+  }
+}
+
+@media only all and ( max-width: 420px ) {
+  .tweets__tweet, .tweets__tweet a {
+    @include font-size( 15px, false );
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+<div class="job" id="job-{{id}}">
+  <h1 class="h3">{{headline}}</h1>
+  <h2 class="h4">{{subline}}</h2>
+  <div class="grid">
+    <div class="grid__item one-whole lap--one-half desk--one-half">
+      <h3 class="h5">Lorem Ipsum:</h3>
+      {{#each about-us}}
+        <p class="p--inverted">{{{text}}}</p>
+      {{/each}}
+    </div>
+    <div class="grid__item one-whole lap--one-half desk--one-half">
+      <h3 class="h5">Lorem Ipsum:</h3>
+      {{#each about-you}}
+        <p class="p--inverted">{{text}}</p>
+      {{/each}}
+    </div>
+    {{#if references}}
+      <div class="grid__item one-whole lap--one-half desk--one-half">
+        <h3 class="h5">Lorem Ipsum</h3>
+          {{#each references}}
+            <p class="p--inverted">{{text}}</p>
+          {{/each}}
+      </div>
+      <div class="grid__item one-whole lap--one-half desk--one-half">
+        <p><a class="jobs__apply" href="#">Bewirb dich via E-Mail</a></p>
+      </div>
+    {{/if}}
+  </div>
+  {{#unless references}}
+    <div class="grid grid--right">
+      <div class="grid__item one-whole lap--one-half desk--one-half">
+        <p><a class="jobs__apply" href="#">Bewirb dich via E-Mail</a></p>
+      </div>
+    </div>
+  {{/unless}}
+</div>

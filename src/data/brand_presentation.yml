@@ -1,0 +1,14 @@
+about:
+  headline: Lorem Ipsum
+  content:
+      - Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?
+      - Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?
+      - Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?
+      - Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?
+units:
+  - headline: Logem 
+    text: "Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?"
+  - headline: Logem
+    text: "Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?"
+  - headline: Logem
+    text: "Ipsum omnis obcaecati adipisci dolor quaerat itaque! Exercitationem repellendus consequatur eius unde veniam itaque amet quam aliquam nihil exercitationem odit optio sequi. Nostrum iusto sunt itaque magni officia officiis, quas?"

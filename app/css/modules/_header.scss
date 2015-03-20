@@ -1,0 +1,37 @@
+.header {
+  padding-top: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit * 2;
+}
+
+.header__logo {
+  margin-bottom: $base-spacing-unit;
+
+  text-align: center;
+}
+
+.header__share {
+  float: right;
+}
+
+.header__share {
+  margin-left: $base-spacing-unit * 2;
+}
+
+@media all and ( min-width: 600px ) {
+  .header {
+    margin-bottom: $base-spacing-unit * 5;
+  }
+
+  .header--xmas {
+    margin-bottom: $base-spacing-unit * 2;
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .header__menu {
+    float:right; 
+  }
+}

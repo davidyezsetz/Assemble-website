@@ -1,0 +1,120 @@
+$dimensions: 14px;
+$transition: .2s all ease-in-out;
+$transform-offset: 2px;
+
+.heart {
+  position: relative;
+  top: 4px;
+  width: $dimensions;
+  height: $dimensions;
+
+  text-align: center;
+
+  cursor: pointer;
+  transition: $transition;
+
+  a {
+    display: inline-block;
+
+    font-size: 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    opacity: 0;
+  }
+}
+
+.heart__facebook {
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+.heart__twitter {
+  position: relative;
+  top: -2px;
+  left: 0;
+}
+
+.heart__google {
+  position: relative;
+  top: -1px;
+  left: 0;
+}
+
+.heart__upper-right, .heart__upper-left {
+  position: absolute;
+  top: 0;
+  width: $dimensions / 2;
+  height: $dimensions / 2;
+  
+  border-radius: 45px;
+
+  background: $blue;
+
+  transition: $transition;
+}
+
+.heart__upper-right {
+  left: $dimensions / 2;
+}
+
+.heart__upper-left {
+  left: 0;
+}
+
+.heart__bottom {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 0;
+  height: 0;
+
+  border-style: solid;
+  border-width: 10px $dimensions / 2 0;
+  border-color: $blue transparent transparent;
+
+  transition: $transition;
+}
+
+.no-csstransforms3d .heart, .touch .heart, .heart:hover, .heart--active {
+  width: $dimensions * 4.5 + 10px; /* 3 circles à 1.5 + 5px margin */ 
+
+  a {
+    color: $white;
+    @include font-size( $charlie );
+  }
+
+  img {
+    opacity: 1;
+  }
+
+  .heart__upper-right {
+    top: -2px;
+    left: $dimensions * 3 + 10px;
+    width: $dimensions * 1.5;
+    height: $dimensions * 1.5;
+  }
+
+  .heart__upper-left {
+    top: -2px;
+    width: $dimensions * 1.5;
+    height: $dimensions * 1.5;
+  }
+
+  .heart__bottom {
+    top: -2px;
+    left: $dimensions * 1.5 + 5px;
+    width: $dimensions * 1.5;
+    height: $dimensions * 1.5;
+  
+    border-radius: 45px;
+    border-width: 0;
+
+    background: $blue;
+  }
+}

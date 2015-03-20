@@ -1,0 +1,114 @@
+%font {
+  font-family: AvalonMediumRegular, Arial,"Helvetica Neue",Helvetica,"Nimbus Sans L",sans-serif;
+  font-weight: $weight--normal;
+}
+
+%font--bold {
+  font-family: AvalonMediumBold, Arial,"Helvetica Neue",Helvetica,"Nimbus Sans L",sans-serif;
+  font-weight: $weight--normal;
+}
+
+body {
+  @extend %font;
+}
+
+::selection {
+  background: $light-grey;
+  text-shadow: none;
+}
+
+
+h1, .h1, h2, .h2 {
+  margin: 0 0 $base-spacing-unit;
+
+  color: $blue;
+  letter-spacing: 0;
+  @include font-size( $charlie );
+  @extend %font--bold;
+}
+
+.h1--xmas {
+  @include font-size(30px);
+  font-size: 1.875rem;
+}
+
+h3, .h3 {
+  margin: 0 0 $base-spacing-unit;
+
+  color: $white;
+  letter-spacing: 0;
+  @include font-size( $bravo );
+  @extend %font--bold;
+}
+
+h4, .h4 {
+  margin: 0 0 $base-spacing-unit * 3;
+
+  color: $white;
+  letter-spacing: 0;
+  @include font-size( $charlie );
+  @extend %font--bold;
+}
+
+h5, .h5 {
+  margin: 0 0 $base-spacing-unit;
+
+  color: $white;
+  letter-spacing: 0;
+  @include font-size( $charlie );
+  @extend %font--bold;
+}
+
+p, .p {
+  margin: 0 0 $base-spacing-unit;
+
+  color: $dark-grey;
+  letter-spacing: 0;
+  @include font-size( $delta, false );
+  line-height: 2;
+  @extend %font;
+}
+
+.p--inverted {
+  color: $white;
+  letter-spacing: 0;
+}
+
+strong, .strong {
+  @extend %font--bold;
+  letter-spacing: 0;
+}
+
+small, .smallprint {
+  @include font-size( $echo, false );
+  @extend %font;
+  color: $dark-grey;
+  letter-spacing: 0;
+}
+
+a, .a {
+  @include font-size( $delta );
+  color: $blue;
+  letter-spacing: 0;
+  text-decoration: none;
+  @extend %font;
+
+  &:hover, &:active, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.a--inverted {
+  color: $white;
+  text-decoration: underline;
+}
+
+.hidden-link {
+  color: $dark-grey;
+
+  &:hover {
+    color: $dark-grey;
+    text-decoration: none;
+  }
+}
+

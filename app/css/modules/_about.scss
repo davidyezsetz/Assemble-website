@@ -1,0 +1,15 @@
+.about__units {
+  margin-bottom: $base-spacing-unit * 3;
+
+  h2 {
+    display: inline-block;
+    margin: $base-spacing-unit * 2 5px 0 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  p {
+    display: block;
+  }
+}

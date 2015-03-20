@@ -1,0 +1,67 @@
+top-row:
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+
+bottom-row:
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]
+  - thumb: lorem.jpg
+    folder: lorem
+    thumb-title: Lorem
+    hover: lorem/logo_lorem.png
+    headline: Lorem Ipsum 
+    text: Consectetur facilis quos tenetur doloremque vero exercitationem, illo adipisci laudantium. Voluptates a itaque temporibus voluptatem ullam? Ipsum dicta dicta ipsam qui earum. Minus magnam voluptatibus quos explicabo impedit quaerat aut.
+    blog-link: #
+    slider: [ lorem_01.png, lorem_02.png, lorem_03.png, lorem_04.png, lorem_05.png ]

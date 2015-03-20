@@ -1,0 +1,42 @@
+/**
+ * Paths
+ */
+$image-path: '../images';
+$fonts-path: '../fonts';
+
+/**
+ * Base units
+ */
+$base-spacing-unit: 20px;
+$half-spacing-unit: 10px;
+$base-font-size:    16px;
+$base-line-height:  24px;
+$max-width: 1024px;
+
+/**
+ * Font-sizes
+ */
+$alpha:     150px;
+$bravo:     50px;
+$charlie:   20px;
+$delta:     15px;
+$echo:      12px;
+
+/**
+ * Font-Weights
+ */
+$weight--normal:  400;
+$weight--bold:    700;
+
+/**
+ * Colors
+ */
+
+$white:             rgb( 255, 255, 255 );
+$blue:              rgb( 0, 163, 210 );
+$blue--transparent: rgba( 0, 163, 210, 0.8 );
+$light-grey:        rgb( 228, 228, 228 );
+$medium-grey:       rgb( 201, 201, 201 );
+$dark-grey:         rgb( 124, 124, 124 );
+
+$angle: -5.8deg;
